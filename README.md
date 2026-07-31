@@ -197,3 +197,217 @@ Love You Forever
 </body>
 
 </html>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#ffd6e8,#ffeaf4,#fff);
+overflow-x:hidden;
+color:#333;
+}
+
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:40px 20px;
+text-align:center;
+transition:.8s;
+}
+
+.hidden{
+display:none;
+}
+
+h1{
+font-family:'Dancing Script',cursive;
+font-size:3rem;
+color:#ff2d75;
+margin-bottom:20px;
+}
+
+h2{
+font-size:1.7rem;
+margin-bottom:15px;
+}
+
+.subtitle{
+max-width:650px;
+font-size:1.1rem;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+button{
+background:#ff2d75;
+color:white;
+border:none;
+padding:16px 35px;
+font-size:18px;
+border-radius:50px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 10px 25px rgba(255,45,117,.3);
+margin-top:25px;
+}
+
+button:hover{
+transform:translateY(-4px) scale(1.05);
+background:#ff0f63;
+}
+
+.card{
+max-width:800px;
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:0 15px 40px rgba(0,0,0,.12);
+line-height:2;
+font-size:18px;
+}
+
+.slider{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px;
+width:100%;
+max-width:1100px;
+margin-top:30px;
+}
+
+.slider img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.18);
+transition:.35s;
+}
+
+.slider img:hover{
+transform:scale(1.05);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+width:100%;
+max-width:1000px;
+margin-top:35px;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:20px;
+font-size:18px;
+font-weight:600;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.35s;
+cursor:pointer;
+}
+
+.box:hover{
+background:#ff2d75;
+color:white;
+transform:translateY(-6px);
+}
+
+#timer{
+font-size:2.6rem;
+font-weight:bold;
+margin:35px 0;
+color:#ff2d75;
+}
+
+.hearts{
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:-1;
+}
+
+.hearts span{
+position:absolute;
+bottom:-30px;
+font-size:24px;
+animation:float 10s linear infinite;
+opacity:.75;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0) rotate(0deg);
+opacity:0;
+}
+
+10%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh) rotate(360deg);
+opacity:0;
+}
+
+}
+
+#end{
+background:linear-gradient(135deg,#ff8eb7,#ffc5dd,#fff0f7);
+}
+
+#end p{
+max-width:700px;
+font-size:22px;
+line-height:2;
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:0 10px 35px rgba(0,0,0,.12);
+}
+
+a{
+text-decoration:none;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:2.3rem;
+}
+
+h2{
+font-size:1.3rem;
+}
+
+.card{
+padding:25px;
+font-size:16px;
+}
+
+button{
+width:90%;
+}
+
+.slider img{
+height:250px;
+}
+
+#timer{
+font-size:2rem;
+}
+
+}
